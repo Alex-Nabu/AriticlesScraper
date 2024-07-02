@@ -1,12 +1,9 @@
 {
     "blog": [
-      "https://ironvest-kb.groovehq.com/help",
-      "https://help.stampli.com/en/collections/1700118-invoices",
-      "https://help.stampli.com/en/collections/1700135-vendors",
-      "https://help.stampli.com/en/collections/6206059-mobile-app"
+      "https://support.papayaglobal.com/s/category?name=Papaya%20integrations"
     ],
     "cache": "articles_temp.json",
-    "articleLinksSlug": ["/help/", "/articles/"],
+    "articleLinksSlug": ["/help/", "/articles/", "article-detail__body"],
     "articleBodyTags": ["article-body", "article_body"],
     "saveFile": "articles.json"
 }
