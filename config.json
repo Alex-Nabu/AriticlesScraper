@@ -1,9 +1,10 @@
 {
     "blog": [
+      "https://ironvest-kb.groovehq.com/help",
       "https://support.papayaglobal.com/s/category?name=Papaya%20integrations"
     ],
     "cache": "articles_temp.json",
-    "articleLinksSlug": ["/help/", "/articles/", "article-detail__body"],
-    "articleBodyTags": ["article-body", "article_body"],
+    "articleLinksSlug": ["/help/", "/articles/", "article/"],
+    "articleBodyTags": ["article-body", "article_body", "article-detail__body"],
     "saveFile": "articles.json"
 }

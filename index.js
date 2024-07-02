@@ -1,4 +1,4 @@
-const axios = require('axios');
+const puppeteer = require('puppeteer');
 const cheerio = require('cheerio');
 const fs = require('fs');
 
@@ -11,16 +11,13 @@ const classNames = config.articleBodyTags;
 const saveFile = config.saveFile;
 const articleLinksSlugs = config.articleLinksSlug;
 
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
-axios.defaults.headers.common['User-Agent'] ='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36';
-axios.defaults.headers.common['Cookie'] = 'intercom-id-cjcr7hhj=a13c8450-4814-4230-8229-b99cfdb0efe1; intercom-session-cjcr7hhj=; intercom-device-id-cjcr7hhj=beae6ed8-060a-4930-ab81-94f20d6e2dcd; _gcl_au=1.1.1723280162.1719893331; _gid=GA1.2.274320345.1719893331; _vwo_uuid_v2=DD16948DDFDA1A54EF6D4BE77B39E5AF5|0093c3ef367b22652996c8117d4b06eb; _vwo_uuid=DD16948DDFDA1A54EF6D4BE77B39E5AF5; _vwo_ds=3%241719893528%3A5.81251933%3A%3A; _vis_opt_s=1%7C; _vis_opt_test_cookie=1; _vis_opt_exp_75_exclude=1; __hstc=69106254.b5712e91c0196fa495651b773a842bee.1719893532274.1719893532274.1719893532274.1; hubspotutk=b5712e91c0196fa495651b773a842bee; __hssrc=1; _fbp=fb.1.1719893600270.162049308490252505; _uetsid=6a7f6750382911ef915ff7f935e91b9b; _uetvid=6a7f7240382911ef8fd3697f09e380cb; fs_uid=#314T2#7f09aef1-11c0-40ad-90f1-07c40872b65f:ffc46fe0-f44c-4be4-8b48-3bdd6db019b5:1719893601023::1#/1751429602; _ga=GA1.1.1904335721.1719893331; _ga_T4CCQVL165=GS1.1.1719896616.2.1.1719900683.43.0.21951278';
-
-
-
 async function getArticleLinks(blog) {
     console.log(`Fetching main page for blog: ${blog}...`);
-    const response = await axios.get(blog);
-    const $ = cheerio.load(response.data);
+    const browser = await puppeteer.launch();
+    const page = await browser.newPage();
+    await page.goto(blog, { waitUntil: 'networkidle2' });
+    const content = await page.content();
+    const $ = cheerio.load(content);
     const articleLinks = [];
 
     console.log('Extracting article links...');
@@ -31,14 +28,18 @@ async function getArticleLinks(blog) {
         }
     });
 
+    await browser.close();
     console.log(`Found ${articleLinks.length} article links for blog: ${blog}.`);
     return articleLinks;
 }
 
 async function getArticleDetails(url, count, domainName) {
     console.log(`Fetching article: ${url}`);
-    const response = await axios.get(url);
-    const $ = cheerio.load(response.data);
+    const browser = await puppeteer.launch();
+    const page = await browser.newPage();
+    await page.goto(url, { waitUntil: 'networkidle2' });
+    const content = await page.content();
+    const $ = cheerio.load(content);
     const id = `${domainName}#${count}`;
     const title = $('title').text();
     let bodyContent = '';
@@ -59,6 +60,7 @@ async function getArticleDetails(url, count, domainName) {
         strictMatch = false;
     }
 
+    await browser.close();
     console.log(`Fetched article: ${title}`);
     return {
         id,

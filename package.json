@@ -3,7 +3,6 @@
     "axios": "^1.7.2",
     "cheerio": "^1.0.0-rc.12",
     "fs": "^0.0.1-security",
-    "install": "^0.13.0",
-    "npm": "^10.8.1"
+    "puppeteer": "^22.12.1"
   }
 }
