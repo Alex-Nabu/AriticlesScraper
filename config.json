@@ -1,0 +1,12 @@
+{
+    "blog": [
+      "https://ironvest-kb.groovehq.com/help",
+      "https://help.stampli.com/en/collections/1700118-invoices",
+      "https://help.stampli.com/en/collections/1700135-vendors",
+      "https://help.stampli.com/en/collections/6206059-mobile-app"
+    ],
+    "cache": "articles_temp.json",
+    "articleLinksSlug": ["/help/", "/articles/"],
+    "articleBodyTags": ["article-body", "article_body"],
+    "saveFile": "articles.json"
+}

@@ -635,5 +635,26 @@
     "title": "Is My Data Safe with IronVest?",
     "body": "Your Autofill data records are encrypted with your private key, and only you can decrypt them. This assures that even IronVest cannot decrypt these records, ensuring the highest level of privacy and security for your data.\n            ",
     "strictMatch": true
+  },
+  {
+    "id": "help.stampli.com#1",
+    "html_url": "https://help.stampli.com/en/articles/5581626-emailing-invoices-to-stampli",
+    "title": "Emailing Invoices to Stampli | Stampli Help Center",
+    "body": "For Stampli customers, invoices can be emailed to a dedicated address that is specifically set up for a customer. When emailing invoice attachment(s) to Stampli, keep the following in mind:Stampli only accepts invoices in PDF format. Any attachments that are not in PDF will be disregarded.Up to 100 files can be sent in a single email.Each file can be no larger than 50 MB. Note most email clients do not allow attachments that are more than 10 MB.We recommend an individual invoice is no more than 299 pages, even though unlimited number of pages is supported.After an invoice is uploaded into Stampli, a customer can add an unlimited number of attachments to the invoice.Directly contact your customer if you are a vendor and have questions about sending your invoices.",
+    "strictMatch": true
+  },
+  {
+    "id": "help.stampli.com#2",
+    "html_url": "https://help.stampli.com/en/articles/2931148-vendor-portal-overview",
+    "title": "Vendor Portal Overview | Stampli Help Center",
+    "body": "Stampli makes it easy for you to engage with your vendors with the Stampli Vendor Portal. Rather than spending time answering emails or phone calls with vendors, give your vendors access to the portal where they can:View status of their invoicesSearch for specific invoicesSend invoice questions via the Stampli applicationUpdate their profileInvite colleagues to the portalFor details on how vendors are invited to get access to the portal, view this article. View Invoice Status Click Dashboard on the navigation bar to view invoices according to these statuses:Processing: Invoices that have been received and coded. Processed: Invoices that have been marked as paid in Stampli.Cancelled: Invoices that have been cancelled by your customer.View Invoice DetailsSend an Invoice Inquiry  When sending an invoice inquiry, invoice image and details are available in the same window for easy reference. You can view and respond to inquiries directly within Stampli. Update Contact Info or Address Use the Profile section to update contact and/or address (if enabled by the customer).   Invite a Colleague Let other team members view invoices by inviting them to join the Vendor Portal.   ",
+    "strictMatch": true
+  },
+  {
+    "id": "help.stampli.com#3",
+    "html_url": "https://help.stampli.com/en/articles/8400653-submitting-an-expense-in-the-mobile-app",
+    "title": "Submitting an expense in the mobile app | Stampli Help Center",
+    "body": "From the mobile app you can add receipt to the Receipt Library and submit your expenses with ease. To submit an expenseFrom the home screen select My Expense Activities.Select Expenses you need to submit.Select the paper icon to add your receipt. You can take a photo, choose from files, choose from your Photo Library, match from receipt library, or request a document from another user. Select an individual expense with the Missing Info badge to fill in expense details, mandatory fields appear in red. Select the Select All box to bulk submit expenses for approval. When all necessary documentation and fields have been filled out, select Submit for Approval.​ Add receipt to Receipt LibraryFrom the home screen select Upload Receipt.Choose to take a photo, upload one for your Photo Library or choose from your files. When taking a photo smart scanning technology will highlight your receipt and crop out the background.Fill in relevant details such as date and amount of the transaction. Select Submit. The receipt image will now be available to add to your expenses. ​",
+    "strictMatch": true
   }
 ]
