@@ -1,10 +1,36 @@
 {
-    "blog": [
-      "https://ironvest-kb.groovehq.com/help",
-      "https://support.papayaglobal.com/s/category?name=Papaya%20integrations"
-    ],
-    "cache": "articles_temp.json",
-    "articleLinksSlug": ["/help/", "/articles/", "article/"],
-    "articleBodyTags": ["article-body", "article_body", "article-detail__body"],
-    "saveFile": "articles.json"
+  "blog": [
+    {
+      "url": "https://ironvest-kb.groovehq.com/help",
+      "articleLinksSlug": ["/help"],
+      "articleBodyTags": ["article-body"],
+      "puppeteer": false
+    },
+    {
+      "url": "https://help.stampli.com/en/collections/1700118-invoices?reload",
+      "articleLinksSlug": ["/articles/"],
+      "articleBodyTags": ["article_body"],
+      "puppeteer": false
+    },
+    {
+      "url": "https://help.stampli.com/en/collections/1700135-vendors",
+      "articleLinksSlug": ["/articles/"],
+      "articleBodyTags": ["article_body"],
+      "puppeteer": false
+    },
+    {
+      "url": "https://help.stampli.com/en/collections/6206059-mobile-app",
+      "articleLinksSlug": ["/articles/"],
+      "articleBodyTags": ["article_body"],
+      "puppeteer": false
+    },
+    {
+      "url": "https://support.papayaglobal.com/s/category?name=Papaya%20integrations",
+      "articleLinksSlug": ["article/"],
+      "articleBodyTags": ["article-detail__body"],
+      "puppeteer": true
+    }
+  ],
+  "cache": "articles_temp.json",
+  "saveFile": "articles.json"
 }
