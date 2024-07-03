@@ -1,74 +1,13 @@
 {
-  "blog": [
-    {
-      "url": "https://ironvest-kb.groovehq.com/help",
-      "articleLinksSlug": ["/help"],
-      "articleBodyTags": ["article-body"],
-      "puppeteer": false
-    },
-    {
-      "url": "https://support.overwolf.com/en/support/sitemap.xml",
-      "articleLinksSlug": ["support.overwolf.com/en/support/solutions/articles/"],
-      "articleBodyTags": ["article-body"],
-      "puppeteer": false,
-      "isXML": true
-    },
-    {
-      "url": "https://help.stampli.com/en/collections/1700118-invoices",
-      "articleLinksSlug": ["/articles/"],
-      "articleBodyTags": ["article_body"],
-      "puppeteer": false
-    },
-    {
-      "url": "https://help.stampli.com/en/collections/1700135-vendors",
-      "articleLinksSlug": ["/articles/"],
-      "articleBodyTags": ["article_body"],
-      "puppeteer": false
-    },
-    {
-      "url": "https://help.stampli.com/en/collections/6206059-mobile-app",
-      "articleLinksSlug": ["/articles/"],
-      "articleBodyTags": ["article_body"],
-      "puppeteer": false
-    },
-    {
-      "url": "https://support.papayaglobal.com/s/category?name=Employees%2C%20Workers%20%26%20Contractors",
-      "articleLinksSlug": ["article/"],
-      "articleBodyTags": ["article-detail__body"],
-      "puppeteer": true
-    },
-    {
-      "url": "https://support.papayaglobal.com/s/category?name=BI%20Analytics%20Suite",
-      "articleLinksSlug": ["article/"],
-      "articleBodyTags": ["article-detail__body"],
-      "puppeteer": true
-    },
-    {
-      "url": "https://support.papayaglobal.com/s/category?name=HR%20%26%20Finance%20Teams",
-      "articleLinksSlug": ["article/"],
-      "articleBodyTags": ["article-detail__body"],
-      "puppeteer": true
-    },
-    {
-      "url": "https://support.papayaglobal.com/s/category?name=Papaya%20integrations",
-      "articleLinksSlug": ["article/"],
-      "articleBodyTags": ["article-detail__body"],
-      "puppeteer": true
-    },
-    {
-      "url": "https://support.papayaglobal.com/s/category?name=In-Country%20Partners",
-      "articleLinksSlug": ["article/"],
-      "articleBodyTags": ["article-detail__body"],
-      "puppeteer": true
-    },
-    {
-      "url": "https://support.papayaglobal.com/s/category?name=Facts%20and%20FAQs",
-      "articleLinksSlug": ["article/"],
-      "articleBodyTags": ["article-detail__body"],
-      "puppeteer": true
-    }
-
-  ],
-  "cache": "articles_temp.json",
-  "saveFile": "articles.json"
+    "blog": [
+      {
+        "url": "https://support.papayaglobal.com/",
+        "articleLinksSlug": ["article/"],
+        "articleBodyTags": ["article-detail__body"],
+        "puppeteer": true
+      }
+    ],
+    "cache": "articles_temp.json",
+    "saveFile": "articles.json",
+    "maxDepth": 3
 }
