@@ -23,6 +23,12 @@ function isSameDomain(url1, url2) {
     return domain1 === domain2;
 }
 
+function wait(time) {
+   return new Promise(function(resolve) {
+       setTimeout(resolve, time)
+   });
+}
+
 async function getArticleLinks(browser, blog, depth = 0) {
     if (depth > maxDepth || checkedUrls.has(blog.url)) {
         return [];
@@ -92,6 +98,7 @@ async function getArticleDetails(page, url, count, domainName, blog) {
         let content;
         if (blog.puppeteer) {
             await page.goto(url, { waitUntil: 'networkidle2' });
+            await wait(1000);
             content = await page.content();
         } else {
             const response = await axios.get(url);

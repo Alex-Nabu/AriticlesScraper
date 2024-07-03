@@ -1,13 +1,32 @@
 {
-    "blog": [
-      {
-        "url": "https://support.papayaglobal.com/",
-        "articleLinksSlug": ["article/"],
-        "articleBodyTags": ["article-detail__body"],
-        "puppeteer": true
-      }
-    ],
-    "cache": "articles_temp.json",
-    "saveFile": "articles.json",
-    "maxDepth": 3
+  "blog": [
+    {
+      "url": "https://ironvest-kb.groovehq.com/help",
+      "articleLinksSlug": ["/help"],
+      "articleBodyTags": ["article-body"],
+      "puppeteer": false
+    },
+    {
+      "url": "https://support.overwolf.com/en/support/home",
+      "articleLinksSlug": ["support.overwolf.com/en/support/solutions/articles/"],
+      "articleBodyTags": ["article-body"],
+      "puppeteer": false,
+      "isXML": true
+    },
+    {
+      "url": "https://help.stampli.com/en/",
+      "articleLinksSlug": ["/articles/"],
+      "articleBodyTags": ["article_body"],
+      "puppeteer": false
+    },
+    {
+      "url": "https://support.papayaglobal.com/s/",
+      "articleLinksSlug": ["/s/article/"],
+      "articleBodyTags": ["article-detail__body"],
+      "puppeteer": true
+    }
+  ],
+  "cache": "articles_temp.json",
+  "saveFile": "articles.json",
+  "maxDepth" : 3
 }
